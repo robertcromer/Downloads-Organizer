@@ -1,0 +1,20 @@
+# Downloads-Organizer configuration file
+
+[info]
+title = "Main configuration file"
+version = "0.0.1"
+author = "KeyboardBasher"
+license = "GNU GPLv3"
+repository = "https://github.com/KeyboardBasher/Downloads-Organizer"
+readme = "README.md"
+
+[downloads]
+# Specify your downloads folder path.
+folder_path = ""
+
+[[folders]]
+# Specify path to folder the files ending with these extentions will move to.
+folder_path = ""
+extentions = [
+    # Specify extensions you'd like moved into this folder.
+]
