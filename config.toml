@@ -8,6 +8,8 @@ license = "GNU GPLv3"
 repository = "https://github.com/KeyboardBasher/Downloads-Organizer"
 readme = "README.md"
 
+# IF USING A WINDOWS OS, please ensure all backslashes are replaced with
+# forward slashes.
 [downloads]
 # Specify your downloads folder path.
 folder_path = ""
