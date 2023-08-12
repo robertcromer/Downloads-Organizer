@@ -7,11 +7,11 @@ __maintainer__ = "KeyboardBasher"
 __status__ = "Development"
 __name__ = "Downloads Organizer"
 
-import app_settings, organizer, gui
+import app_settings, gui
 
-config = app_settings.Config()
-
-program_gui = gui.MainApp(program_name=__name__)
+program_gui = gui.MainApp(
+                program_name=__name__,
+                config=app_settings.Config())
 program_gui.mainloop()
 
 exit()

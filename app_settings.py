@@ -22,5 +22,3 @@ class Config:
             return False
         else:
             return True
-
-
