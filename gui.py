@@ -26,6 +26,12 @@ class MainApp(ctk.CTk):
                         pady=20
         )
         
+        """Organized files label.
+        
+        This label displays the quantity of files which have been organized
+        into their target folders. This label will update once the organize
+        function is completed.
+        """
         self.organized_files_label = ctk.CTkLabel(
                         master=self,
                         text="0 files moved."
@@ -38,7 +44,15 @@ class MainApp(ctk.CTk):
         )
     
     def organize_callback(self):
+        """Call organize methods and update label.
+        
+        Calls core functions of the organizer module.
+        Updates the organized files label to reflect quantity of files
+        organized.
+        """
         self.organizer.validate_sort_folders()
         self.organizer.get_downloaded_files()
         self.organizer.organize()
-        self.organized_files_label.configure(text=f"{self.organizer.qty_files_moved} files moved.")
+        self.organized_files_label.configure(
+                        text=f"{self.organizer.qty_files_moved} files organized."
+        )
